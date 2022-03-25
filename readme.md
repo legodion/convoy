@@ -24,7 +24,7 @@ class Login extends Component
 {
     public function route()
     {
-        return Route::get('login')
+        return Route::get('/login')
             ->name('login')
             ->middleware('guest');
     }
