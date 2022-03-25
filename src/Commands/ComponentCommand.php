@@ -21,7 +21,7 @@ class ComponentCommand extends GeneratorCommand
 
     protected function getStub()
     {
-        return __DIR__ . '/../Stubs/Component.php';
+        return __DIR__ . '/../../stubs/Component.php';
     }
 
     protected function getDefaultNamespace($rootNamespace)
