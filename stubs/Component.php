@@ -16,7 +16,9 @@ class DummyClass extends Component
     public function render()
     {
         return <<<'BLADE'
-            <p>DummyWisdomOfTheTao</p>
+            <div>
+                {{-- DummyWisdomOfTheTao --}}
+            </div>
         BLADE;
     }
 }
