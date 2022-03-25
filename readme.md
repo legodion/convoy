@@ -1,6 +1,6 @@
 # Convoy
 
-This package allows you to declare routes inside of your Laravel Livewire components.
+This package allows you to declare routes inside of your full page Laravel Livewire components.
 
 All you have to do is create a `route` method inside of your Livewire components which returns a Laravel `Route`. The package will automatically detect the route. This package also works perfectly alongside traditional Laravel route files, and even allows you to cache them.
 
