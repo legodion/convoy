@@ -1,0 +1,28 @@
+{
+    "name": "legodion/convoy",
+    "description": "Declare routes inside Laravel Livewire components.",
+    "keywords": [
+        "php",
+        "laravel",
+        "livewire",
+        "routes",
+        "components"
+    ],
+    "license": "MIT",
+    "require": {
+        "laravel/framework": "^7.0|^8.0|^9.0",
+        "livewire/livewire": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Legodion\\Convoy\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Legodion\\Convoy\\Providers\\ConvoyServiceProvider"
+            ]
+        }
+    }
+}
