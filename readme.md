@@ -17,6 +17,8 @@ composer require legodion/convoy
 Declare a `route` method inside of your Laravel Livewire components:
 
 ```php
+namespace App\Http\Livewire\Auth;
+
 use Illuminate\Support\Facades\Route;
 use Livewire\Component;
 
@@ -27,6 +29,11 @@ class Login extends Component
         return Route::get('/login')
             ->name('login')
             ->middleware('guest');
+    }
+
+    public function render()
+    {
+        return view('auth.login');
     }
 }
 ```

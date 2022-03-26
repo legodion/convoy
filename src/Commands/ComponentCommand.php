@@ -17,6 +17,8 @@ class ComponentCommand extends GeneratorCommand
         if (parent::handle() === false && !$this->option('force')) {
             return false;
         }
+
+        return 0;
     }
 
     protected function getStub()

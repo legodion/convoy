@@ -16,9 +16,7 @@ Route::middleware('web')->group(function () {
 
     foreach ((new Finder)->in($path) as $component) {
         $component = $namespace . str_replace(
-            ['/', '.php'],
-            ['\\', ''],
-            Str::after($component->getRealPath(), realpath(app_path()) . DIRECTORY_SEPARATOR)
+            ['/', '.php'], ['\\', ''], Str::after($component->getRealPath(), realpath(app_path()) . DIRECTORY_SEPARATOR)
         );
 
         if (is_subclass_of($component, Component::class) && method_exists($component, 'route')) {
